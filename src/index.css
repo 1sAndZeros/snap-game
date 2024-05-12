@@ -1,0 +1,70 @@
+@import url("./reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Freeman&display=swap");
+
+:root {
+  /* Colours */
+  --clr-primary: rgba(2, 0, 36, 1);
+  --clr-secondary: rgba(9, 9, 121, 1);
+  --clr-tertiary: rgba(0, 212, 255, 1);
+  --clr-neutral-100: rgb(255, 255, 255);
+  --clr-neutral-200: rgb(245, 245, 245);
+  --clr-neutral-900: rgb(0, 0, 0);
+
+  /* Font Family */
+  --ff-primary: Freeman, system-ui, Arial, sans-serif;
+
+  /* Font weights */
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  /* Font Sizes */
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-med: 1rem;
+  --fs-lg: 1.5rem;
+  --fs-xl: 3rem;
+
+  /* Sizes variables */
+  --size-100: 0.25rem;
+  --size-200: 0.5rem;
+  --size-300: 0.75rem;
+  --size-400: 1rem;
+  --size-500: 1.25rem;
+  --size-600: 1.5rem;
+  --size-700: 2rem;
+  --size-800: 2.5rem;
+  --size-900: 3rem;
+
+  /* Border radius */
+  --radius-sm: var(--size-200);
+  --radius-md: var(--size-400);
+  --radius-lg: var(--size-700);
+
+  font-family: var(--ff-primary);
+  line-height: 1.5;
+}
+
+body {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  background: linear-gradient(
+    90deg,
+    var(--clr-primary) 0%,
+    var(--clr-secondary) 35%,
+    var(--clr-tertiary) 100%
+  );
+  color: var(--clr-neutral-100);
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: white;
+  color: var(--clr-secondary);
+}
+
+button {
+  cursor: pointer;
+}
